@@ -7,11 +7,17 @@
 	
 	<div class="container mt-5">
 
-		<div class="card bg-light">
-			<div class="card-header"><h2 th:text="${title}"></h2></div>
-			<div class="card-body">
-				<p id="demo"> </p>
-			</div>
+		<div class="row">
+			<div class="col-sm" th:each="subsidiary: ${request.subsidiaryList}">			
+				<div class="card" >
+					<img class="card-img-top" th:src="${subsidiary.image}" th:alt="${subsidiary.name}">
+					<div class="card-body">
+						<h5 class="card-title" th:text="${subsidiary.name}"></h5>
+						<p class="card-text" th:text="${subsidiary.category}"></p>
+		    			<a href="${subsidiary.showMenu.href}" class="btn btn-primary">Ver menú</a>
+					</div>
+				</div>
+			</div>		
 		</div>
 		
 	</div>
