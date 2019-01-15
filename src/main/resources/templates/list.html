@@ -14,7 +14,7 @@
 					<div class="card-body">
 						<h5 class="card-title" th:text="${subsidiary.name}"></h5>
 						<p class="card-text" th:text="${subsidiary.category}"></p>
-		    			<a href="${subsidiary.showMenu.href}" class="btn btn-primary">Ver menú</a>
+		    			<a th:href="${subsidiary.showMenu.href}" class="btn btn-primary">Ver menú</a>
 					</div>
 				</div>
 			</div>		
