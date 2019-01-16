@@ -8,13 +8,13 @@
 	<div class="container mt-5">
 
 		<div class="row">
-			<div class="col-sm-12 col-md-6 col-lg-3" th:each="subsidiary: ${request.subsidiaryList}">			
+			<div class="col-sm" th:each="subsidiary: ${request.subsidiaryList}">			
 				<div class="card" >
 					<img class="card-img-top" th:src="${subsidiary.image}" th:alt="${subsidiary.name}">
 					<div class="card-body">
 						<h5 class="card-title" th:text="${subsidiary.name}"></h5>
 						<p class="card-text" th:text="${subsidiary.category}"></p>
-		    			<a th:href="@{/subsidiary/subsidiary.subsidiaryKey}" class="btn btn-primary">Ver men&uacute;</a>
+		    			<a th:href="${subsidiary.showMenu.href}" class="btn btn-primary">Ver menú</a>
 					</div>
 				</div>
 			</div>		
