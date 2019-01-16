@@ -3,7 +3,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class SubsidiaryGeneral {
-	private long idFavorite;
+	//private long idFavorite;
 	private long idCompany;
 	private boolean activeTakeAway;
 	private String deliveryTime;
@@ -17,29 +17,37 @@ public class SubsidiaryGeneral {
 	private boolean activeDineIn;
 	private boolean activePromotions;
 	private long idSubsidiary;
-	//categoryProductList
+	private CategoryProduct []categoryProductList;
 	private String image;
 	private String subsidiaryKey;
 	private boolean activeTaim;
 	private double shippingCost;
 	private String txtShare;
-	private String []horary;
-	private String reservations;
+	//private String []horary;
+	//private String reservations;
 	private String name;
 	//information	{…}
 	private String category;
 	private double minimalPrice;
-	private String []favorite;
-	private boolean isFavorite;
+	//private String []favorite;
+	//private boolean isFavorite;
 	
-	public long getIdFavorite() {
-		return idFavorite;
-	}
-	public void setIdFavorite(long idFavorite) {
-		this.idFavorite = idFavorite;
-	}
+//	public long getIdFavorite() {
+//		return idFavorite;
+//	}
+//	public void setIdFavorite(long idFavorite) {
+//		this.idFavorite = idFavorite;
+//	}
+	
+	
 	public long getIdCompany() {
 		return idCompany;
+	}
+	public CategoryProduct[] getCategoryProductList() {
+		return categoryProductList;
+	}
+	public void setCategoryProductList(CategoryProduct[] categoryProductList) {
+		this.categoryProductList = categoryProductList;
 	}
 	public void setIdCompany(long idCompany) {
 		this.idCompany = idCompany;
@@ -146,18 +154,18 @@ public class SubsidiaryGeneral {
 	public void setTxtShare(String txtShare) {
 		this.txtShare = txtShare;
 	}
-	public String[] getHorary() {
-		return horary;
-	}
-	public void setHorary(String[] horary) {
-		this.horary = horary;
-	}
-	public String getReservations() {
-		return reservations;
-	}
-	public void setReservations(String reservations) {
-		this.reservations = reservations;
-	}
+//	public String[] getHorary() {
+//		return horary;
+//	}
+//	public void setHorary(String[] horary) {
+//		this.horary = horary;
+//	}
+//	public String getReservations() {
+//		return reservations;
+//	}
+//	public void setReservations(String reservations) {
+//		this.reservations = reservations;
+//	}
 	public String getName() {
 		return name;
 	}
@@ -176,17 +184,17 @@ public class SubsidiaryGeneral {
 	public void setMinimalPrice(double minimalPrice) {
 		this.minimalPrice = minimalPrice;
 	}
-	public String[] getFavorite() {
-		return favorite;
-	}
-	public void setFavorite(String[] favorite) {
-		this.favorite = favorite;
-	}
-	public boolean isFavorite() {
-		return isFavorite;
-	}
-	public void setFavorite(boolean isFavorite) {
-		this.isFavorite = isFavorite;
-	}
+//	public String[] getFavorite() {
+//		return favorite;
+//	}
+//	public void setFavorite(String[] favorite) {
+//		this.favorite = favorite;
+//	}
+//	public boolean isFavorite() {
+//		return isFavorite;
+//	}
+//	public void setFavorite(boolean isFavorite) {
+//		this.isFavorite = isFavorite;
+//	}
 	
 }

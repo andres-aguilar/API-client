@@ -10,7 +10,7 @@ public class Product {
 	private long idProduct;
 	private String description;
 	private double discount;
-	private String []detail;
+	//private String []detail;
 	private String productKey;
 	
 	public double getUnitPrice() {
@@ -55,12 +55,12 @@ public class Product {
 	public void setDiscount(double discount) {
 		this.discount = discount;
 	}
-	public String[] getDetail() {
-		return detail;
-	}
-	public void setDetail(String[] detail) {
-		this.detail = detail;
-	}
+//	public String[] getDetail() {
+//		return detail;
+//	}
+//	public void setDetail(String[] detail) {
+//		this.detail = detail;
+//	}
 	public String getProductKey() {
 		return productKey;
 	}
